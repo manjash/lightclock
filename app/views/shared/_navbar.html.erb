@@ -1,59 +1,85 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png" %>
+  <%= image_tag "logo.png" %>
   <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <ul class= "list-inline" id="connect">
+      <li><a href="#" data-toggle="modal" data-target="#myModal" target="_blank">How it works</li>
+      <li><a href="/team" target="_blank">The team</li>
+      <li><a href="mailto:anna.gat@gmail.com">Get in touch</a></li>
+    </ul>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">How it works</h4>
+          </div>
+          <div class="modal-body text-center">
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda praesentium quisquam molestiae nam, excepturi quos eligendi, inventore neque aut minima explicabo! Pariatur ea eaque, eius deserunt ipsam maiores facere tempore.</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Search form -->
-    <form action="" class="navbar-wagon-search">
+<!--     <form action="" class="navbar-wagon-search">
       <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
       <button type="submit" class="navbar-wagon-search-btn">
         <i class="fa fa-search"></i>
       </button>
-    </form>
+    </form> -->
 
     <!-- Different navigation if login or not -->
     <% if user_signed_in? %>
 
-      <!-- Notification -->
-      <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
-        <div class="badge-container">
-          <i class="fa fa-envelope-o"></i>
-          <div class="badge badge-blue">3</div>
-        </div>
-      <% end %>
+    <!-- Notification -->
+    <% link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
+    <div class="badge-container">
+      <i class="fa fa-envelope-o"></i>
+      <div class="badge badge-blue">3</div>
+    </div>
+    <% end %>
 
-      <!-- Profile picture and dropdown -->
-      <div class="navbar-wagon-item">
-        <div class="dropdown">
-          <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-home"></i>  <%= t(".profile", default: "Home") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-              <% end %>
-            </li>
-          </ul>
-        </div>
+    <!-- Profile picture and dropdown -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li>
+            <%= link_to "#" do %>
+            <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#" do %>
+            <i class="fa fa-home"></i>  <%= t(".profile", default: "Home") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+            <% end %>
+          </li>
+        </ul>
       </div>
+    </div>
 
     <% else %>
 
-      <!-- Login text link -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <!-- Login text link -->
+    <% link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
     <% end %>
 
