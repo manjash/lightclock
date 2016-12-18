@@ -4,9 +4,16 @@
   padding: 10px 15px;
   border-radius: 50px;
   font-weight: lighter;
-  opacity: 0.6;
-  white-space: normal;
-  text-align: left;
+  font-size: 15px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+#button-right {
+  width: 153px;
+  margin-left: 30px;
 }
 .btn-medium:hover {
   opacity: 1;
@@ -29,7 +36,7 @@
 }
 
 .button-read {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 /* Build your own button classes ! */
