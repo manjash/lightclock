@@ -5,6 +5,8 @@
   border-radius: 50px;
   font-weight: lighter;
   font-size: 15px;
+  background-color: #20C3C6;
+  opacity: 0.7;
 }
 
 .buttons {
@@ -18,7 +20,8 @@
 .btn-medium:hover {
   opacity: 1;
   text-decoration: none;
-  color: #999999;
+  color: white;
+  background-color: #11586D;
 }
 .btn-treehouse {
   color: white;
