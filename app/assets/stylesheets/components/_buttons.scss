@@ -6,7 +6,7 @@
   font-weight: lighter;
   font-size: 18px;
   background-color: #3EAEB2;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .buttons {
@@ -21,7 +21,7 @@
   opacity: 1;
   text-decoration: none;
   color: white;
-  background-color: #58ABDC;
+  background-color: #39868A;
 }
 .btn-treehouse {
   color: white;
@@ -39,12 +39,11 @@
 }
 
 .button-read {
-  margin-top: 30px;
   position: absolute;
   bottom: 10px;
   right: 10px;
   border: 1px solid white;
-  padding: 6px 8px;
+  padding: 6px 6px;
   border-radius: 50px;
   font-weight: lighter;
   opacity: 0.9;
@@ -52,7 +51,7 @@
       color: white;
     }
     &:hover {
-      background-color: #3EAEB2;
+      background-color: whitesmoke;
     }
 }
 
