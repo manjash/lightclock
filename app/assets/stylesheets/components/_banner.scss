@@ -1,19 +1,53 @@
 .banner {
   color: white;
   text-align: center;
-  min-height: 600px;
+  height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .banner h1 {
   font-size: 50px;
   font-weight: bolder;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-
 }
+
+.banner-work {
+  color: white;
+  text-align: center;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 765px;
+  }
+}
+
+.wrapper-work {
+  margin-top: 30px;
+  background-color: transparent;
+  background: rgba(245, 245, 245, 0.26);
+  opacity: 0.8;
+  padding: 20px 20px 20px 10px;
+  text-align: left;
+}
+
 .banner-content p {
   font-size: 20px;
   font-weight: lighter;
@@ -27,6 +61,3 @@
   position: absolute;
 }
 
-.banner-content {
-  margin-top: -60px;
-}
