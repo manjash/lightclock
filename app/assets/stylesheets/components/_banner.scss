@@ -1,7 +1,7 @@
 .banner {
   color: white;
   text-align: center;
-  height: 100vh;
+  min-height: 600px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -21,4 +21,12 @@
   margin: 0 auto;
   margin-bottom: 20px;
   width: 632px;
+}
+
+.banner img {
+  position: absolute;
+}
+
+.banner-content {
+  margin-top: -60px;
 }

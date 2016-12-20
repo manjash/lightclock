@@ -1,16 +1,49 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <%= link_to root_path, class: "navbar-wagon-brand" do %>
-  <%= image_tag "logo.png" %>
-  <% end %>
 
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        </button>
+        <a class="navbar-brand page-scroll" href="/">
+        <i><%= image_tag "logo.png", class: "navbar-brand" %></i>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" data-toggle="modal" data-target="#myModal">How it works</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="/download">The team</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="mailto:anna.gat@gmail.com">Get in touch</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+<!--   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <ul class= "list-inline" id="connect">
       <li><a href="#" data-toggle="modal" data-target="#myModal" target="_blank">How it works</li>
       <li><a href="/team" target="_blank">The team</li>
       <li><a href="mailto:anna.gat@gmail.com">Get in touch</a></li>
-    </ul>
+    </ul> -->
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -23,7 +56,7 @@
             <h4 class="modal-title" id="myModalLabel">How it works</h4>
           </div>
           <div class="modal-body text-center">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda praesentium quisquam molestiae nam, excepturi quos eligendi, inventore neque aut minima explicabo! Pariatur ea eaque, eius deserunt ipsam maiores facere tempore.</h4>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda praesentium quisquam molestiae nam, excepturi quos eligendi, inventore neque aut minima explicabo! Pariatur ea eaque, eius deserunt ipsam maiores facere tempore.</h4>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
