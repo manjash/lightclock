@@ -212,9 +212,12 @@
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
   outline: none;
   background-color: transparent;
+  color: #20C3C6;
+  transition-duration: 1s;
+  text-decoration: none;
+
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
