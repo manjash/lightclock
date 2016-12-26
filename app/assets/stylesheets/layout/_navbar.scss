@@ -38,14 +38,16 @@
     margin: 7px;
     color: #E8EEF2;
   }
-  a:hover {
-    color: #20C3C6;
-    transition-duration: 1s;
-    text-decoration: none;
-  }
   a:active {
     text-decoration: none;
   }
+}
+
+
+.navbar-info a:hover {
+  color: #20C3C6;
+  transition-duration: 1s;
+  text-decoration: none;
 }
 
 
@@ -199,6 +201,7 @@
   line-height: 22px;
   height: 50px;
   margin-left: -15px !important;
+
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
@@ -206,18 +209,10 @@
 .navbar-custom a {
   color: white;
 }
-.navbar-custom .nav li a {
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
+
 .navbar-custom .nav li a:hover {
   outline: none;
   background-color: transparent;
-  color: #20C3C6;
-  transition-duration: 1s;
-  text-decoration: none;
-
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
