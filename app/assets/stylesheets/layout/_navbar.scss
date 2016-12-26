@@ -213,6 +213,10 @@
 .navbar-custom .nav li a:hover {
   outline: none;
   background-color: transparent;
+  color: #20C3C6;
+  transition-duration: 1s;
+  text-decoration: none;
+
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
