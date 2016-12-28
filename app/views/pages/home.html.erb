@@ -7,36 +7,40 @@
       <a href="/contacts" class="btn btn-medium btn-lg", id="button-right">I want to<br><strong>ORDER RESEARCH</strong></a>
     </div>
 
-        <!-- Intro Header -->
+    <!-- Intro Header -->
     <header class="intro">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <a href="#about" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 <!--     <div class="button-read">
     <a class="btn btn-medium">I’m here to read good stuff</a>
-    </div> -->
-  </div>
+  </div> -->
+</div>
 </div>
 
 <div class="container-box text-center padded features">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-4" id="about">
-      <i class="fa fa-cogs icon" aria-hidden="true"></i>
+      <%= link_to work_path, class: "info" do %>
+      <i class="fa fa-eercast icon" aria-hidden="true"></i>
       <h3 class="info">How it works</h3>
+      <% end %>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
+    <%= link_to team_path, class: "info" do %>
       <i class="fa fa-users icon" aria-hidden="true"></i>
       <h3 class="info">The Team</h3>
+      <% end %>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4">
-      <i class="fa fa-comments icon" aria-hidden="true"></i>
+      <i class="fa fa-connectdevelop icon" aria-hidden="true"></i>
       <h3 class="info">Get in touch</h3>
     </div>
   </div>

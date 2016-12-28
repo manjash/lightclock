@@ -9,9 +9,12 @@
 
 .info {
  color: white;
+ &:hover {
+  text-decoration: none;
+ }
 }
 
-.icon {
+ .icon {
   color: white;
   font-size: 100px;
 }
