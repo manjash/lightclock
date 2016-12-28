@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+.banner-content {
+  margin-top: 100px;
+}
+
 .banner h1 {
   font-size: 60px;
   font-weight: bolder;
@@ -25,5 +29,8 @@
 
 .banner img {
   position: absolute;
+}
+.container.contact {
+  min-height: calc(100vh - 50px);
 }
 
