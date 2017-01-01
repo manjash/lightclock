@@ -15,7 +15,7 @@
 .banner-team {
   color: white;
   text-align: center;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  min-height: calc(100vh - 70px);
   background-size: cover !important;
   display: flex;
   align-items: center;
