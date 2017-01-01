@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'team', to: 'pages#team'
-  get 'work', to: 'pages#work'
+  get 'how_it_works', to: 'pages#how_it_works'
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
