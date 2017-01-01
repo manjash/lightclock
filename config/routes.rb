@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'team', to: 'pages#team'
+  get 'get_in_touch', to: 'pages#get_in_touch'
   get 'how_it_works', to: 'pages#how_it_works'
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
