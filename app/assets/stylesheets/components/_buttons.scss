@@ -1,61 +1,58 @@
-.btn-medium {
-  color: #333333;
-  padding: 8px 40px;
-  font-weight: lighter;
-  font-size: 2vh;
-  background-color: white;
+.btn-medium-left {
+  color: white;
+  padding: 10px 40px;
+  font-size: 1.8vh;
+  background-color: #0088EA;
+  min-width: 180px !important;
+  text-align: center;
+  margin-right: 25px;
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+  }
 }
 
-.btn-medium-thinker {
-  color: white;
-  padding: 8px 40px;
+.btn-medium-middle {
+  color: #333333;
+  padding: 10px 40px;
   font-weight: lighter;
-  font-size: 2vh;
-  background-color: #0088EA;
+  font-size: 1.8vh;
+  background-color: white;
+  min-width: 180px !important;
+  margin-right: 25px;
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+  }
+}
+
+.btn-medium-right {
+  color: #333333;
+  padding: 10px 40px;
+  font-weight: lighter;
+  font-size: 1.8vh;
+  min-width: 180px !important;
+  background-color: white;
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+  }
+  // flex: 0 0 10%;
 }
 
 .buttons {
   margin-top: 60px;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
 }
 
-#button-right {
-  margin-left: 100px;
-}
 
-.btn-medium:hover {
-  opacity: 1;
-  text-decoration: none;
-  color: white;
-  background-color: #3EAEB2;
-}
-.btn-treehouse {
-  color: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-weight: bold;
-  background: #6AD58B;
-  transition: background 0.3s ease;
-}
-.btn-treehouse:hover {
-  opacity: 1;
-  background: #3ac162;
-  text-decoration: none;
-  color: white;
-}
-
-.button-read {
-  padding: 6px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.9;
-  margin-left: 950px;
-  margin-top: 36px;
-  a {
-    color: white;
-  }
-  &:hover {
-    background-color: whitesmoke;
-  }
-}
 
 /* Build your own button classes ! */

@@ -6,28 +6,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: no-repeat top center fixed;
+  background-size: cover;
 }
 
 .banner-content {
-  margin-top: 100px;
+  margin-top: 180px;
 }
 
 .banner h1 {
-  font-weight: bolder;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  font-family: 'Montserrat', serif;
-  letter-spacing: 2px;
-  font-size: 6.5vw;
+  font-family: 'Montserrat';
+  font-size: 6.3vw;
+  line-height: 69px;
+  font-weight: 700;
 }
 
 .banner-content p {
   font-size: 3vh;
-  font-weight: lighter;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(255, 255, 255);
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 765px;
-  font-family: 'Montserrat', serif;
+  font-family: 'Open Sans', serif;
+  line-height: 28px;
+  font-weight: 600;
+  min-width: 752px;
+  max-width: 752px;
+  margin-top: 40px;
+  letter-spacing: 0.3px;
 }
 
 .banner img {
