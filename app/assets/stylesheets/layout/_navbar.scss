@@ -27,19 +27,19 @@
 }
 
 /* Navbar right section (with form, links, button) */
-// .navbar-wagon-right {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   a {
-//     font-size: 15px;
-//     margin: 7px;
-//     color: #E8EEF2;
-//   }
-//   a:active {
-//     text-decoration: none;
-//   }
-// }
+.navbar-wagon-right {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   a {
+     font-size: 10px;
+     margin: 7px;
+     color: #E8EEF2;
+   }
+   a:active {
+     text-decoration: none;
+   }
+ }
 
 
 .navbar-info a:hover {
@@ -47,6 +47,8 @@
   transition-duration: 1s;
   text-decoration: none;
 }
+
+
 
 
 /* Navbar item */
@@ -201,6 +203,13 @@
   text-decoration: none;
 
 }
+
+# NAVBAR LINKS ON THE RIGHT
+.navbar-custom .nav {
+  margin-top: 18px;
+  border-right: 1px solid whitesmoke;
+}
+
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
   outline: none;
