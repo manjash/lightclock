@@ -23,7 +23,7 @@
 
 /* Navbar logo */
 .navbar-wagon-brand img {
-  width: 50px;
+  width: 60px;
 }
 
 /* Navbar right section (with form, links, button) */
@@ -181,12 +181,11 @@
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
-  height: 50px !important;
+  height: 70px !important;
   float: left;
   padding: 4px 25px;
-  font-size: 30px;
-  height: 50px;
   margin-left: -25px !important;
+  margin-top: 2px !important;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
@@ -204,10 +203,13 @@
 
 }
 
-# NAVBAR LINKS ON THE RIGHT
+// NAVBAR LINKS ON THE RIGHT
 .navbar-custom .nav {
   margin-top: 18px;
-  border-right: 1px solid whitesmoke;
+  border-right: 1px solid #AFB2BA;
+  font-size: 13px;
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .navbar-custom .nav li a:focus,
@@ -237,8 +239,9 @@
     padding: 0;
     background: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
       a {
-        color: black;
+        color: #777777;
       }
   }
 }
