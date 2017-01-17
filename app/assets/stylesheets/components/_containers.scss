@@ -4,19 +4,23 @@
 }
 
 .container-box {
-  background-color: #111831;
+  background-color: white;
+  color: #333333;
 }
 
 .info {
- color: white;
+ color: #333333;
+ font-size: 16px;
+ line-height: 26px;
+ text-transform: uppercase;
  &:hover {
   text-decoration: none;
- }
+}
 }
 
- .icon {
-  color: white;
-  font-size: 100px;
+.icon {
+  color: black;
+  font-size: 80px;
 }
 
 
