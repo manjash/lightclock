@@ -6,21 +6,20 @@
 .container-box {
   background-color: white;
   color: #333333;
+  h3 {
+    border-bottom: 1.5px solid whitesmoke;
+    padding-bottom: 10px;  }
+  }
+
+  .info {
+   color: #333333;
+   font-size: 16px;
+   line-height: 26px;
+   text-transform: uppercase;
+   &:hover {
+    text-decoration: none;
+  }
 }
 
-.info {
- color: #333333;
- font-size: 16px;
- line-height: 26px;
- text-transform: uppercase;
- &:hover {
-  text-decoration: none;
-}
-}
-
-.icon {
-  color: black;
-  font-size: 80px;
-}
 
 

@@ -2,6 +2,33 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
-#how {
-  font-size: 15px;
+ .info-title {
+  color: #333333;
+  border-bottom: 1px solid #1E73BE;
+  margin: 0px 400px 20px 400px;
+  h2 {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 200;
+    font-style: normal;
+  }
+}
+
+.info-text {
+  margin: 6px 350px 80px 350px;
+    p {
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.icon {
+  color: #1E73BE;
+  font-size: 80px;
+  &:hover {
+    color: #333333;
+    transition-duration: 1s;
+    transform: scale(1.4);
+  }
 }
