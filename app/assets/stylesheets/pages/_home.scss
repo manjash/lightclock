@@ -4,7 +4,6 @@
  * ------------------------------------- */
  .info-title {
   color: #333333;
-  border-bottom: 1px solid #1E73BE;
   margin: 0px 400px 20px 400px;
   h2 {
     font-size: 26px;
@@ -14,9 +13,16 @@
   }
 }
 
+.sep-line {
+  border-bottom: 2px solid #1E73BE;
+  width: 100px;
+  margin-left: 158px;
+  margin-bottom: 33px;
+}
+
 .info-text {
   margin: 6px 350px 80px 350px;
-    p {
+  p {
     font-weight: lighter;
     font-size: 18px;
     line-height: 28px;
