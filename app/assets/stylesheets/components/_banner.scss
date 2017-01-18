@@ -12,6 +12,20 @@
 
 .banner-content {
   margin-top: 180px;
+  p {
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', serif;
+    line-height: 28px;
+    font-weight: 600;
+    min-width: 752px;
+    max-width: 752px;
+    margin-top: 40px;
+    letter-spacing: 0.3px;
+    text-shadow: 1px 1px grey;
+  }
 }
 
 .banner h1 {
@@ -20,20 +34,6 @@
   font-size: 6.3vw;
   line-height: 69px;
   font-weight: 700;
-}
-
-.banner-content p {
-  font-size: 3vh;
-  color: rgb(255, 255, 255);
-  margin: 0 auto;
-  margin-bottom: 5px;
-  font-family: 'Open Sans', serif;
-  line-height: 28px;
-  font-weight: 600;
-  min-width: 752px;
-  max-width: 752px;
-  margin-top: 40px;
-  letter-spacing: 0.3px;
 }
 
 .banner img {
