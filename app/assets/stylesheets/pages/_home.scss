@@ -31,12 +31,21 @@
 }
 
 .board-advisors {
+  margin-top: 140px;
+  h2 {
+    letter-spacing: 2px
+  }
+}
+
+.board-list {
+  margin: 11px 300px 11px 300px;
   li {
     font-size: 14px;
     line-height: 24px;
     font-family: Open Sans;
     font-weight: 400;
     color: #777777;
+    text-align: left;
   }
   &:hover {
     text-decoration: none;
