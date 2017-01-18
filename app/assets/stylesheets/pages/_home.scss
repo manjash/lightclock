@@ -30,6 +30,19 @@
   }
 }
 
+.board-advisors {
+  li {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Open Sans;
+    font-weight: 400;
+    color: #777777;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .sep-line {
   border-bottom: 2px solid #1E73BE;
   width: 100px;
