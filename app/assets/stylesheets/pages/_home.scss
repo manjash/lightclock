@@ -89,6 +89,11 @@
   }
 }
 
+.icon-1 {
+  color: #1E73BE;
+  font-size: 50px;
+}
+
 .sep-line-team {
   border-bottom: 2px solid #1E73BE;
   width: 100px;
@@ -166,5 +171,16 @@
 }
 .right-box {
   margin: 160px 131px 180px 47px;;
+}
+
+.academia-software {
+  margin: 15px 45px 40px 45px;
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Open Sans;
+    font-weight: 400;
+    color: #777777;
+  }
 }
 
