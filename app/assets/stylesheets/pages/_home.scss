@@ -19,7 +19,6 @@
   }
 }
 
-
 .info-title {
   color: #333333;
   margin: 0px 400px 20px 400px;
@@ -54,6 +53,32 @@
   }
 }
 
+.info-text.team {
+  margin: 0 295px 35px 295px;
+  color: #777777;
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Open Sans;
+  }
+}
+
+.info-title.team {
+  color: #333333;
+  margin: 140px 0px 20px 0px;
+  h2 {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 200;
+    font-style: normal;
+  }
+}
+
+.info-title.team.founded {
+  color: #333333;
+  margin: 25px 0px 20px 0px;
+}
+
 .icon {
   color: #1E73BE;
   font-size: 80px;
@@ -62,6 +87,12 @@
     transition-duration: 0.6s;
     transform: scale(1.4);
   }
+}
+
+.sep-line-team {
+  border-bottom: 2px solid #1E73BE;
+  width: 100px;
+  margin-left: 516px;
 }
 
 // Scroll back to top button:
