@@ -34,7 +34,7 @@
 .sep-line {
   border-bottom: 2px solid #1E73BE;
   width: 100px;
-  margin-left: 158px;
+  margin-left: 171px;
   margin-bottom: 33px;
 }
 
@@ -88,4 +88,21 @@
 .fa-angle-double-up {
   margin-left: 13px;
   margin-top: 10px;
+}
+
+.container-einstein {
+  background-color: #F7F7F7;
+  color: #333333;
+  margin: 27px 30px 10px 30px;
+  padding: 1px;
+  p {
+    margin: 20px 0 20px;
+  }
+  span {
+    color: #1E73BE;
+    a:hover {
+      text-decoration: none;
+      color: #1E73BE;
+    }
+  }
 }
