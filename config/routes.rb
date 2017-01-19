@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'order_research', to: 'pages#order_research'
   get 'get_in_touch', to: 'pages#get_in_touch'
-  get 'how_it_works', to: 'pages#how_it_works'
+  get 'thinker', to: 'pages#thinker'
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
