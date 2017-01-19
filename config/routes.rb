@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
-  get 'team', to: 'pages#team'
+  get 'order_research', to: 'pages#order_research'
   get 'get_in_touch', to: 'pages#get_in_touch'
   get 'how_it_works', to: 'pages#how_it_works'
 
