@@ -8,8 +8,10 @@
 function collapseNavbar() {
   if ($(".navbar").offset().top > 1) {
     $(".navbar-fixed-top").addClass("top-nav-collapse");
+    $(".navbar-brand.img2").removeClass('hidden');
   } else {
     $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    $(".navbar-brand.img2").addClass('hidden');
   }
 }
 
@@ -17,20 +19,21 @@ $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
 // Scroll back to top button:
-jQuery(document).ready(function() {
+$(document).ready(function() {
   var offset = 30;
   var duration = 400;
   $('.back-to-top').css({"display": "none"});
-  jQuery(window).scroll(function() {
-    if (jQuery(this).scrollTop() > offset) {
-      jQuery('.back-to-top').slideDown(duration);
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > offset) {
+      $('.back-to-top').slideDown(duration);
     } else {
-      jQuery('.back-to-top').slideUp(duration);
+      $('.back-to-top').slideUp(duration);
+
     }
   });
-  jQuery('.back-to-top').click(function(event) {
+  $('.back-to-top').click(function(event) {
     event.preventDefault();
-    jQuery('html, body').animate({scrollTop: 0}, duration);
+    $('html, body').animate({scrollTop: 0}, duration);
     return false;
   })
 });
