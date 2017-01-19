@@ -16,6 +16,7 @@
   background: no-repeat top center fixed;
   background-size: cover;
   background-position: center center;
+  margin-bottom: 90px;
 }
 
 .banner-content-order {
@@ -63,6 +64,7 @@
     font-weight: 200;
     font-style: normal;
     margin: 35px 0 16px 55px;
+    letter-spacing: 2px;
   }
 }
 
@@ -99,6 +101,12 @@ hr {
 }
 
 .closing-text {
+  p  {
+   margin-top: 40px;
+ }
+}
+
+.closing-text-p {
   p  {
    margin-top: 40px;
  }
