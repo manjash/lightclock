@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :order_research, :thinker, :get_in_touch ]
+  skip_before_action :authenticate_user!, only: [ :home, :order_research, :thinker, :read, :get_in_touch ]
 
   def home
   end
@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   end
 
   def get_in_touch
+  end
+
+  def read
   end
 
 end
