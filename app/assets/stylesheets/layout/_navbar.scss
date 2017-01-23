@@ -168,13 +168,12 @@
   height: 90px;
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black;
 }
-.navbar-custom .navbar-toggle {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 10px;
-}
+// .navbar-custom .navbar-toggle {
+//   color: white;
+//   background-color: rgba(255, 255, 255, 0.2);
+//   font-size: 10px;
+// }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
   outline: none;
@@ -231,9 +230,9 @@
 .navbar-custom .nav li.active {
   outline: none;
 }
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
-}
+// .navbar-custom .nav li.active a {
+//   background-color: rgba(255, 255, 255, 0.3);
+// }
 .navbar-custom .nav li.active a:hover {
   color: white;
 }

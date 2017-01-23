@@ -1,12 +1,26 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(<%= image_path ("banner-new.jpg") %>)">
   <div class="banner-content">
     <h1>LightClock</h1>
-    <p>LightClock is a cross-disciplinary thinking platform, a large idea collider managing collaboration between thinkers of different fields and views to find groundbreaking solutions to real-world problems.</p>
-    <div class="buttons">
-    <%= link_to "JOIN AS A THINKER", "/thinker", class: "btn btn-medium-left" %>
-    <%= link_to "ORDER RESEARCH", "/order_research", class: "btn btn-medium-middle" %>
-    <%= link_to "READ", "#", class: "btn btn-medium-right" %>
-      <div class="clear"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+        <div class="info-front text-center">
+            <p>LightClock is a cross-disciplinary thinking platform, a large idea collider managing collaboration between thinkers of different fields and views to find groundbreaking solutions to real-world problems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4, col-sm-6, col-md-12">
+          <div class="buttons">
+            <%= link_to "JOIN AS A THINKER", "/thinker", class: "btn btn-medium-left" %>
+            <%= link_to "ORDER RESEARCH", "/order_research", class: "btn btn-medium-middle" %>
+            <%= link_to "READ", "#", class: "btn btn-medium-right" %>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Intro Header -->

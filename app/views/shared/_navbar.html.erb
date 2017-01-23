@@ -10,8 +10,8 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="navbar-collapse navbar-right">
-        <ul class="nav navbar-nav">
+      <div class="navbar-right">
+        <ul class="nav navbar-nav hidden-xs hidden-sm">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden">
             <a href="#page-top"></a>
@@ -27,10 +27,19 @@
           </li>
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
   </nav>
+
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Domains of Discourse</a></li>
+        <li><a href="/get_in_touch">Get in touch</a></li>
+      </ul>
+    </div>
+  </div>
 
 <!--   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <ul class= "list-inline" id="connect">
@@ -58,15 +67,6 @@
         </div>
       </div>
     </div>
-
-
-    <!-- Search form -->
-<!--     <form action="" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
-      <button type="submit" class="navbar-wagon-search-btn">
-        <i class="fa fa-search"></i>
-      </button>
-    </form> -->
 
     <!-- Different navigation if login or not -->
     <% if user_signed_in? %>
