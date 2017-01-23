@@ -9,12 +9,12 @@ function collapseNavbar() {
 
  var current_width = $(window).width();
 
- if (current_width < 750) {
+if (current_width < 992) {
   $(".navbar-fixed-top").addClass("custom-xs");
 }
 else {
   $(".navbar-fixed-top").removeClass("custom-xs");
-}
+};
 
 if ($(".navbar").offset().top > 1) {
   $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -38,7 +38,6 @@ $(document).ready(function() {
       $('.back-to-top').slideDown(duration);
     } else {
       $('.back-to-top').slideUp(duration);
-
     }
   });
   $('.back-to-top').click(function(event) {
