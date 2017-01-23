@@ -56,6 +56,9 @@
   flex: 0 1 auto;
   cursor: pointer;
   padding: 0 20px;
+  i {
+    margin-top: 25px;
+  }
 }
 
 /* Navbar standard link */
@@ -178,6 +181,9 @@
 .navbar-custom .navbar-toggle:active {
   outline: none;
 }
+
+// Navbar on scroll and mobile
+
 .navbar-custom .navbar-brand {
   font-weight: 700;
   height: 70px !important;
@@ -198,6 +204,18 @@
   top: 4px;
   left: 25px;
 }
+
+.navbar-brand.img-xs {
+  position: absolute;
+  top: 10px;
+  left: 122px;
+}
+
+.custom-xs {
+  background-color: white;
+  height: 70px;
+}
+
 .navbar-custom .navbar-brand:focus {
   outline: none;
 }
@@ -447,6 +465,3 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
-.custom-xs {
-  background-color: white;
-}
