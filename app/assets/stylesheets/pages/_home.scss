@@ -2,7 +2,26 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
- .container-box {
+
+ .content {
+   text-align: center;
+   h2 {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+    p {
+      font-weight: lighter;
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0 auto;
+      max-width: 570px;
+    }
+}
+
+.container-box {
   background-color: white;
   color: #333333;
   h3 {
@@ -16,18 +35,6 @@
    text-transform: uppercase;
    &:hover {
     text-decoration: none;
-  }
-}
-
-.info-title {
-  color: #333333;
-  margin: 0px 400px 20px 400px;
-  h2 {
-    font-size: 26px;
-    line-height: 36px;
-    font-weight: 200;
-    font-style: normal;
-    letter-spacing: 2px
   }
 }
 
@@ -65,15 +72,6 @@
   width: 100px;
   margin-left: 143px;
   margin-bottom: 33px;
-}
-
-.info-text {
-  margin: 6px 350px 80px 350px;
-  p {
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 28px;
-  }
 }
 
 .info-text.team {
