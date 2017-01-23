@@ -11,14 +11,15 @@
     font-weight: 200;
     font-style: normal;
     letter-spacing: 2px;
+    margin-top: 110px;
   }
-    p {
-      font-weight: lighter;
-      font-size: 18px;
-      line-height: 28px;
-      margin: 0 auto;
-      max-width: 570px;
-    }
+  h4 {
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+    max-width: 570px;
+  }
 }
 
 .container-box {
@@ -46,7 +47,8 @@
 }
 
 .board-list {
-  margin: 11px 300px 11px 300px;
+  max-width: 700px;
+  margin: 0 auto;
   li {
     font-size: 14px;
     line-height: 24px;
@@ -60,11 +62,11 @@
   }
 }
 
-.sep-line p {
+.sep-line h4 {
   border-bottom: 2px solid #1E73BE;
   width: 100px;
   margin-bottom: 33px;
-  color: white;
+  color: transparent;
   margin-top: -22px;
 }
 
@@ -76,7 +78,8 @@
 }
 
 .info-text.team {
-  margin: 0 295px 35px 295px;
+  margin: 0 auto;
+  max-width: 580px;
   color: #777777;
   p {
     font-size: 14px;
@@ -93,6 +96,7 @@
     line-height: 36px;
     font-weight: 200;
     font-style: normal;
+    letter-spacing: 2px;
   }
 }
 
@@ -114,6 +118,7 @@
 .icon-1 {
   color: #1E73BE;
   font-size: 50px;
+  margin-top: 30px;
 }
 
 .sep-line-team {
@@ -204,5 +209,13 @@
     font-weight: 400;
     color: #777777;
   }
+}
+
+.separator {
+  background-color: #1E73BE;
+  width: 120px;
+  height: 2px;
+  margin: 0 auto;
+  border: none;
 }
 
