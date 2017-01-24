@@ -3,9 +3,11 @@
   padding: 10px 40px;
   font-size: 1.8vh;
   background-color: #0088EA;
-  min-width: 180px !important;
+  min-width: 194px !important;
   text-align: center;
   line-height: 13px;
+  margin-top: 10px;
+  margin-right: 20px;
   &:hover {
     opacity: 1;
     text-decoration: none;
@@ -22,6 +24,8 @@
   background-color: white;
   min-width: 194px !important;
   line-height: 13px;
+  margin-top: 10px;
+  margin-right: 20px;
   &:hover {
     opacity: 1;
     text-decoration: none;
@@ -38,20 +42,18 @@
   min-width: 194px !important;
   background-color: white;
   line-height: 13px;
+  margin-top: 10px;
+  margin-right: 20px;
   &:hover {
     opacity: 1;
     text-decoration: none;
     color: white;
     background-color: #333333;
   }
-  // flex: 0 0 10%;
 }
 
 .buttons {
   margin-top: 60px;
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
 }
 
 
