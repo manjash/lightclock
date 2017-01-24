@@ -176,14 +176,14 @@
     font-size: 32px;
     color: #ffffff;
     line-height: 42px;
-    font-weight: 400;
+    font-weight: 100;
     font-family: Montserrat;
   }
   p {
     font-size: 14px;
     line-height: 24px;
     font-family: Open Sans;
-    font-weight: 400;
+    font-weight: 100;
   }
 }
 
@@ -194,10 +194,16 @@
 }
 
 .left-box {
-  margin: 160px 0px 0 165px;
+  margin: auto;
+  max-width: 422px;
+  margin-bottom: 200px;
+  margin-top: 200px;
 }
 .right-box {
-  margin: 160px 131px 180px 47px;;
+  margin: auto;
+  max-width: 422px;
+  margin-bottom: 200px;
+  margin-top: 200px;
 }
 
 .academia-software {
