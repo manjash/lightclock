@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :order_research, :thinker, :read, :get_in_touch ]
+  skip_before_action :authenticate_user!, only: [ :home, :order_research, :thinker, :read,
+  :get_in_touch, :domains_of_discourse ]
 
   def home
   end
@@ -14,6 +15,9 @@ class PagesController < ApplicationController
   end
 
   def read
+  end
+
+  def domains_of_discourse
   end
 
 end

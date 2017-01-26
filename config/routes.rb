@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'get_in_touch', to: 'pages#get_in_touch'
   get 'thinker', to: 'pages#thinker'
   get 'read', to: 'pages#read'
+  get 'domains_of_discourse', to: 'pages#domains_of_discourse'
 
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
