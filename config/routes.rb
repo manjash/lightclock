@@ -6,12 +6,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
-  get 'order_research', to: 'pages#order_research'
-  get 'get_in_touch', to: 'pages#get_in_touch'
-  get 'thinker', to: 'pages#thinker'
-  get 'read', to: 'pages#read'
-  get 'domains_of_discourse', to: 'pages#domains_of_discourse'
-
+  get "/:page" => "pages#show"
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]

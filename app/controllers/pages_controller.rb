@@ -1,23 +1,8 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :order_research, :thinker, :read,
-  :get_in_touch, :domains_of_discourse ]
+  skip_before_action :authenticate_user!, only: [ :home, :show ]
 
-  def home
-  end
-
-  def order_research
-  end
-
-  def thinker
-  end
-
-  def get_in_touch
-  end
-
-  def read
-  end
-
-  def domains_of_discourse
+  def show
+    render template: "pages/#{params[:page]}"
   end
 
 end
