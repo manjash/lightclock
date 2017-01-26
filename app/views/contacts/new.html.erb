@@ -1,20 +1,27 @@
-<div class="container padded contact">
-  <div align="center">
-    <h2>Comming Soon</h2>
-
-    <h3>In the meanwhile you can send us an email to us with your enquiry</h3>
-
-    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+<div class="banner-order" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(<%= image_path ("banner-thinker.jpg") %>)">
+  <div class="banner-content-order">
+    <h1 class="become">I WANTO TO BE A THINKER</h1>
+    <div class="thinker-form text-center">
+      <%= simple_form_for @contact, :html => {class: 'form-horizontal' } do |f| %>
+      <%= f.input :name, required: true %>
+      <%= f.input :email, required: true %>
+      <%= f.input :message, :as => :text, :required => true %>
+      <%= f.input :something, as: :text, :required => true %>
+      <%= f.input :something, as: :text, :required => true %>
+      <%= f.input :something, as: :text, :required => true %>
+      <div class= "hidden">
+        <%= f.input :nickname, hint: 'Leave this field blank!' %>
+      </div>
+      <div>
+      </br>
+      <%= f.button :submit, 'Submit form', class: "btn btn-medium-left" %>
     </div>
-    <div>
-    </br>
-    <%= f.button :submit, 'Send message', :class=> "btn btn-success" %>
+    <% end %>
+    </div>
   </div>
-  <% end %>
 </div>
+<div id="slider-arrow" data-target="#info-text">
+  <%= image_tag "arrow_bottom.png" %>
 </div>
+
+
