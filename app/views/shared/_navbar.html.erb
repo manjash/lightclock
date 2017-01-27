@@ -72,6 +72,33 @@
 
     <!-- Different navigation if login or not -->
     <% if user_signed_in? %>
+    <nav class="navbar navbar-custom navbar-fixed-top hidden-xs hidden-sm" role="navigation">
+<div class="container">
+      <div class="navbar-right">
+        <ul class="nav navbar-nav hidden-xs hidden-sm">
+
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="navbar-info" href="/">Home</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="/domains_of_discourse">Domains of Discourse</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="/get_in_touch">Get in touch</a>
+          </li>
+          <li>
+            <%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out", class: "navbar-right") %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
 
     <!-- Notification -->
     <% link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
@@ -82,28 +109,28 @@
     <% end %>
 
     <!-- Profile picture and dropdown -->
-    <div class="navbar-wagon-item">
+<!--     <div class="navbar-wagon-item">
       <div class="dropdown">
-        <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <%# image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li>
-            <%= link_to "#" do %>
-            <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-            <% end %>
+            <%# link_to "#" do %>
+            <i class="fa fa-user"></i> <%# t(".profile", default: "Profile") %>
+            <%# end %>
           </li>
           <li>
-            <%= link_to "#" do %>
-            <i class="fa fa-home"></i>  <%= t(".profile", default: "Home") %>
-            <% end %>
+            <%# link_to "#" do %>
+            <i class="fa fa-home"></i>  <%# t(".profile", default: "Home") %>
+            <%# end %>
           </li>
           <li>
-            <%= link_to destroy_user_session_path, method: :delete do %>
-            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-            <% end %>
+            <%# link_to destroy_user_session_path, method: :delete do %>
+            <i class="fa fa-sign-out"></i>  <%# t(".sign_out", default: "Log out") %>
+            <%# end %>
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <% else %>
 
