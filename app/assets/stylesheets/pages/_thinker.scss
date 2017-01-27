@@ -27,11 +27,30 @@
 .become {
   margin-top: 150px;
   background-color: rgba(51, 51, 51, 0.3);
-  font-size: 42px;
+  font-size: 42px !important;
 }
 
 .thinker-form {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  background-color: rgba(119, 119, 119, 0.34);
+  padding: 30px 60px 30px 60px;
+  border-radius: 8px;
+  border: 1px solid whitesmoke;
+  max-width: 630px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .btn-default {
+    border: none !important;
+  }
+}
+
+.control-label {
+  font-size: 15px;
+  color: #eeeeee;
+  font-weight: lighter;
+}
+
+.form-control {
+  font-size: 13px;
 }
 
