@@ -2,12 +2,14 @@
   <div class="banner-content-order">
     <h1 class="become">BECOME A <span style="color: #1CA9F3">LIGTHCLOCK</span> THINKER</h1>
     <div class="thinker-form text-center">
-      <%= simple_form_for @contact, :html => {class: 'form-horizontal' } do |f| %>
+      <%= simple_form_for @contact, :html => {:multitype => true } do |f| %>
       <%= f.input :name, required: true, placeholder: "John Doe" %>
       <%= f.input :email, required: true, placeholder: "john@gmail.com" %>
       <%= f.input :message, label: "Field of expertise:", required: true, placeholder: "Health economics" %>
       <%= f.input :something, label: "Highest academic degree", collection: ["High school or secondary school", "Some college", "Bachelor's degree or equivalent", "Master's degree or equivalent", "Ph.D", "Post-doc or equivalent"], required: true, placeholder: "Ph.D" %>
       <%# f.input :website, label: "Website:", error: 'Please add a valid website', placeholder: "www.mywebsite.com" %>
+      <%= f.input :attachment, as: :file %>
+      <%# f.input :avatar, as: :file %>
       <div class= "hidden">
         <%= f.input :nickname, hint: 'Leave this field blank!' %>
       </div>
@@ -16,8 +18,8 @@
       <%= f.button :submit, 'Submit form', class: "btn btn-medium-left" %>
     </div>
     <% end %>
-    </div>
   </div>
+</div>
 </div>
 <hr>
 

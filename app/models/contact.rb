@@ -6,6 +6,8 @@ class Contact < MailForm::Base
   attribute :something   #   :validate => true
   # attribute :website
   attribute :nickname,  :captcha => true
+  attribute :file,      :attachment => true
+  # validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
