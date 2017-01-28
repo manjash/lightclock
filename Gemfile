@@ -12,7 +12,9 @@ gem 'redis'
 # Mailing:
 gem 'mail_form'
 gem 'simple_form'
-gem "letter_opener", group: :development
+# gem "letter_opener", group: :development
+
+gem "paperclip", "~> 5.0.0"
 
 gem 'sass-rails'
 gem 'jquery-rails'
