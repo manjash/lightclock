@@ -1,5 +1,6 @@
 Rails.application.configure do
   config.action_mailer.default_url_options = { host: "https://lightclock.herokuapp.com/" }
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.action_mailer.delivery_method = :smtp
@@ -8,14 +9,14 @@ Rails.application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
-  port: 587,
-  domain: 'gmail.com',
-  authentication: "plain",
-  enable_starttls_auto: true,
-  user_name: ENV["GMAIL_ADDRESS"],
-  password: ENV["GMAIL_APP_PASSWORD"]
-  }
+  address: ENV['POSTMARK_SMTP_SERVER'],
+  port: '25',
+  domain: 'heroku.com',
+  user_name: ENV['POSTMARK_API_KEY'],
+  password: ENV['POSTMARK_API_TOKEN'],
+  authentication: :cram_md5,
+  enable_starttls_auto: true
+}
   # Code is not reloaded between requests.
   config.cache_classes = true
 
