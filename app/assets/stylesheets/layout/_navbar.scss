@@ -1,4 +1,11 @@
 /* Main class */
+.nav > li > a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 34px;
+}
+
 .navbar-wagon {
   background: white;
   transition: all 0.3s ease;
@@ -11,6 +18,7 @@
   width: 100%;
   background-color: transparent;
 }
+
 
 /* Optional class to fix the navbar on top */
 .navbar-wagon-fixed {
@@ -40,15 +48,6 @@
    text-decoration: none;
  }
 }
-
-
-// .navbar-info a:hover {
-//   color: #20C3C6;
-//   transition-duration: 1s;
-//   text-decoration: none;
-//   border-top: 1px solid white;
-//   border-radius: 3px;
-// }
 
 
 /* Navbar item */
@@ -223,13 +222,14 @@
   color: white;
 }
 
-.navbar-custom .nav li a:hover {
-  outline: none;
-  background-color: transparent;
-  color: #20C3C6;
-  transition-duration: 1s;
-  text-decoration: none;
-}
+// .navbar-custom .nav li a:hover {
+//   background-color: white;
+//   color: #777;
+//   text-decoration: none;
+//   border: 1px solid white;
+//   border-radius: 40px;
+//   transition-duration: 1s;
+// }
 
 // NAVBAR LINKS ON THE RIGHT
 .navbar-custom .nav {
@@ -240,20 +240,6 @@
   text-transform: uppercase;
 }
 
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li.active {
-  outline: none;
-}
-// .navbar-custom .nav li.active a {
-//   background-color: rgba(255, 255, 255, 0.3);
-// }
-.navbar-custom .nav li.active a:hover {
-  color: white;
-}
 @media (min-width: 768px) {
   .navbar-custom {
     border-bottom: 1px, solid, whitesmoke;
