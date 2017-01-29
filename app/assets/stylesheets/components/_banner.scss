@@ -24,6 +24,18 @@
     font-weight: 600;
     letter-spacing: 0.3px;
     text-shadow: 1px 1px grey;
+    animation-name: slidein;
+    animation-duration: 2s;
+  }
+}
+
+
+@keyframes slidein {
+  from  {
+    margin-bottom: 120%;
+  }
+  to {
+    margin-bottom: 0%;
   }
 }
 
