@@ -1,4 +1,9 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(<%= image_path ("banner-new.jpg") %>)">
+ <div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
+
+ <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(<%= image_path ("banner-new.jpg") %>)">
   <div class="banner-content">
     <h1>LightClock</h1>
     <div class="container">
@@ -17,7 +22,7 @@
           <div class="buttons">
             <%= link_to "JOIN AS A THINKER", "/thinker", class: "btn btn-medium-left" %>
             <%= link_to "ORDER RESEARCH", "/order_research", class: "btn btn-medium-middle" %>
-            <%= link_to "READ", "/read", class: "btn btn-medium-right" %>
+            <%= link_to "READ", "/read", class: "btn btn-medium-right"%>
           </div>
         </div>
       </div>
@@ -184,6 +189,7 @@
     </div>
   </div>
 </div>
+
 
 
 
