@@ -1,16 +1,107 @@
- <div id="overlay">
-    <div id="progstat"></div>
-    <div id="progress"></div>
+  <div id="load"></div>
+  <div id="contents">
+
+
+   <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(<%= image_path ("banner-new.jpg") %>)">
+    <div class="banner-content">
+      <h1>LightClock</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="text-center">
+              <p>LightClock is a cross-disciplinary thinking platform, a large idea collider managing collaboration between thinkers of different fields and views to find groundbreaking solutions to real-world problems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6, col-sm-6, col-md-12">
+            <div class="buttons">
+              <%= link_to "JOIN AS A THINKER", "/thinker", class: "btn btn-medium-left" %>
+              <%= link_to "ORDER RESEARCH", "/order_research", class: "btn btn-medium-middle" %>
+              <%= link_to "READ", "/read", class: "btn btn-medium-right"%>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intro Header -->
+      <header class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <p id="how">How it works</p>
+              <a href="#how" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
   </div>
 
- <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(<%= image_path ("banner-new.jpg") %>)">
-  <div class="banner-content">
-    <h1>LightClock</h1>
+  <div class="content">
+    <h2>HOW IT WORKS</h2>
+    <div class="sep-line text-center"><h4>-</h4></div>
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <div class="text-center">
-            <p>LightClock is a cross-disciplinary thinking platform, a large idea collider managing collaboration between thinkers of different fields and views to find groundbreaking solutions to real-world problems.</p>
+            <h4><strong>LightClock is a co-thinking platform</strong> where experts from different fields and leanings can research and discuss topics in joint articles, and this way</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-box text-center padded features text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4" id="about">
+          <i class="fa fa-eye icon" aria-hidden="true"></i>
+          <h3 class="info">UNDERSTAND THE OTHER SIDE’S POINT OF VIEW</h3>
+          <div class="sep-line-1"></div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fa fa-gratipay icon" aria-hidden="true"></i>
+          <h3 class="info">FIND AREAS OF AGREEMENT</h3>
+          <div class="sep-line-1"></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <i class="fa fa-lightbulb-o icon" aria-hidden="true"></i>
+          <h3 class="info">PRODUCE OUT-OF-THE BOX RESULTS POSSIBLE ONLY WHEN IDEAS COLLIDE</h3>
+          <div class="sep-line-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-einstein">
+      <p>A<span><a href="https://www.youtube.com/watch?v=p2nwdS3ia24"> "light clock"</a></span> is a thought experiment Einstein used to explain time dilation: think a light beam -a photon- bouncing between two mirrors in perfect opposition. Or are they…? Read more about Albert’s idea<span><a href="http://lightclock.org/domains-of-discourse/einsteins-light-clock/"> here</a></span></p>
+    </div>
+
+    <div class="banner" style="background-image: url(<%= image_path ("banner-low.jpg") %>);">
+      <div class="banner-low-content">
+        <div class="row">
+          <div class="col-xs-8 col-md-6">
+            <div class="left-box">
+              <h1>Join as a thinker</h1>
+              <div class="sep-line text-center"><h4>-</h4></div>
+              <p>If you are a practitioner in economics, science and technology, politics and law, linguistics, cultural studies, education, or a historian, sociologist or futurist, you can <strong>apply to the LightClock thinker pool.</strong></p>
+              <p>LightClock thinkers work on paid assignments in opponent pairs.</p>
+              <p>Thinkers find their preferred co-author in our thinker pool via profiles, apps, recommendations and alerts or, alternatively, you can invite a fellow expert from your own network provided the two of you are coming from different backgrounds and fields.</p>
+            </div>
+          </div>
+          <div class="col-xs-8 col-md-6">
+            <div class="right-box">
+              <h1>Order research</h1>
+              <div class="sep-line text-center"><h4>--</h4></div>
+              <p>LightClock thinkers work on assignments from <strong>think tanks, NGOs, private and public organisations</strong>, as well as <strong>corporate</strong> and <strong>academic</strong> bodies.</p>
+              <p>The thinkers access these briefs via the Brief Board and send proposals in duos. When you order research from LightClock, you will be sent a number of proposals from unique pairs of thinkers who can’t wait to combine their expertise in an original and beneficial way.</p>
+              <p>What you get from all this hard work and intellectual fun is a paper that no one has ever written before, to answer your question in a new, better way.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -18,171 +109,80 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-6, col-sm-6, col-md-12">
-          <div class="buttons">
-            <%= link_to "JOIN AS A THINKER", "/thinker", class: "btn btn-medium-left" %>
-            <%= link_to "ORDER RESEARCH", "/order_research", class: "btn btn-medium-middle" %>
-            <%= link_to "READ", "/read", class: "btn btn-medium-right"%>
+        <div class="col-xs-12">
+          <div class="info-title team text-center">
+            <h2>WE'RE HERE FOR YOU</h2>
+            <hr class="separator">
+          </div>
+          <div class="info-text team text-center">
+            <p>The LightClock team provide <strong>support, mediation, editorship,</strong> and, finally, <strong>publication</strong> to thinkers, as well as <strong>client and account services.</strong> The language of the articles published on <span><a href="/">lightclock.org</a></span> is English.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="info-title team founded text-center" id="how">
+            <h2>The LightClock team</h2>
+            <hr class="separator">
+          </div>
+          <div class="info-text team text-center">
+            <p>LightClock was founded by writer-researcher <strong>Anna Gát</strong> in London.</p>
+            <p>Read Anna’s welcome blog post <span><a href="#">here.</a></span></p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Intro Header -->
-    <header class="intro">
-      <div class="container">
+    <div class="academia-software">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6" id="about">
+          <i class="fa fa-graduation-cap icon-1" aria-hidden="true"></i>
+          <h3 class="info">ACADEMIA</h3>
+          <div class="sep-line-3"></div>
+          <p>LightClock’s research advisor, microeconomist and game theorist Peter Isztin took on a key role in refining our concept.</p>
+          <p>Anna, a social liberal writer, and the conservative-libertarian Peter found their passionate debates to be constructive and enlightening. They were surprised to reach some pretty cool agreements. And then some more.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <i class="fa fa-cogs icon-1" aria-hidden="true"></i>
+          <h3 class="info">SOFTWARE</h3>
+          <div class="sep-line-3"></div>
+          <p>LightClock’s tech team come from various backgrounds, including quantum physics, Law as well as design, and actively contribute as thinkers themselves.</p>
+          <p>Cross-disciplinary discussions are, still and always, at the heart of life at LightClock, and we take pride in leading by example.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="board-advisors">
+      <div class="info-title team text-center">
+        <h2>BOARD OF ADVISORS</h2>
+        <div class="sep-line"></div>
+      </div>
+      <div class="board-list">
         <div class="row">
-          <div class="col-xs-12">
-            <p id="how">How it works</p>
-            <a href="#how" class="btn btn-circle page-scroll">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
+          <div class="col-xs-12 col-md-6">
+            <div class="text-center">
+              <ul>
+                <p><li><span><a href="https://www.linkedin.com/in/ibard" target="_blank">Imre Bárd</a></span> – ethics of human enhancement, science communication (London School of Economics, founder at <span><a href="http://www.hackthesenses.com/" target="_blank"><i>Hack the Senses</i></a></span>)</li></p>
+                <p><li>Andrea Eibel – business development, marketing</li></p>
+                <p><li><span><a href="https://www.linkedin.com/in/alex-feldman-a5253828">Alex Feldman</a></span> PhD – Alon Fellow (Department of English, Univeristy of Haifa)</li></p>
+                <p><li><span><a href="https://www.linkedin.com/in/mihaly-kollo-56386b39">Mihaly Kollo</a></span> PhD – systems neuroscience, sensory neurophysiology</li></p>
+                <p><li><span><a href="https://www.linkedin.com/in/julia-koltai-phd-5749a2b2">Julia Koltai</a></span> PhD – sociologist, survey statistician (Hungarian Academy of Sciences, Centre for Social Sciences and Eötvös Loránd University of Sciences)</li></p>
+                <p><li><span><a href="https://www.york.ac.uk/che/staff/research/noemi-kreif/">Noemi Kreif</a></span> PhD –  health economics (research fellow, University of York)</li></p>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
-  </div>
-</div>
-
-<div class="content">
-  <h2>HOW IT WORKS</h2>
-  <div class="sep-line text-center"><h4>-</h4></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="text-center">
-          <h4><strong>LightClock is a co-thinking platform</strong> where experts from different fields and leanings can research and discuss topics in joint articles, and this way</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="container-box text-center padded features text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4" id="about">
-        <i class="fa fa-eye icon" aria-hidden="true"></i>
-        <h3 class="info">UNDERSTAND THE OTHER SIDE’S POINT OF VIEW</h3>
-        <div class="sep-line-1"></div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <i class="fa fa-gratipay icon" aria-hidden="true"></i>
-        <h3 class="info">FIND AREAS OF AGREEMENT</h3>
-        <div class="sep-line-1"></div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-4">
-        <i class="fa fa-lightbulb-o icon" aria-hidden="true"></i>
-        <h3 class="info">PRODUCE OUT-OF-THE BOX RESULTS POSSIBLE ONLY WHEN IDEAS COLLIDE</h3>
-        <div class="sep-line-1"></div>
-      </div>
-    </div>
-  </div>
-  <div class="container-einstein">
-    <p>A<span><a href="https://www.youtube.com/watch?v=p2nwdS3ia24"> "light clock"</a></span> is a thought experiment Einstein used to explain time dilation: think a light beam -a photon- bouncing between two mirrors in perfect opposition. Or are they…? Read more about Albert’s idea<span><a href="http://lightclock.org/domains-of-discourse/einsteins-light-clock/"> here</a></span></p>
-  </div>
-
-  <div class="banner" style="background-image: url(<%= image_path ("banner-low.jpg") %>);">
-    <div class="banner-low-content">
-      <div class="row">
-        <div class="col-xs-8 col-md-6">
-          <div class="left-box">
-            <h1>Join as a thinker</h1>
-            <div class="sep-line text-center"><h4>-</h4></div>
-            <p>If you are a practitioner in economics, science and technology, politics and law, linguistics, cultural studies, education, or a historian, sociologist or futurist, you can <strong>apply to the LightClock thinker pool.</strong></p>
-            <p>LightClock thinkers work on paid assignments in opponent pairs.</p>
-            <p>Thinkers find their preferred co-author in our thinker pool via profiles, apps, recommendations and alerts or, alternatively, you can invite a fellow expert from your own network provided the two of you are coming from different backgrounds and fields.</p>
-          </div>
-        </div>
-        <div class="col-xs-8 col-md-6">
-          <div class="right-box">
-            <h1>Order research</h1>
-            <div class="sep-line text-center"><h4>--</h4></div>
-            <p>LightClock thinkers work on assignments from <strong>think tanks, NGOs, private and public organisations</strong>, as well as <strong>corporate</strong> and <strong>academic</strong> bodies.</p>
-            <p>The thinkers access these briefs via the Brief Board and send proposals in duos. When you order research from LightClock, you will be sent a number of proposals from unique pairs of thinkers who can’t wait to combine their expertise in an original and beneficial way.</p>
-            <p>What you get from all this hard work and intellectual fun is a paper that no one has ever written before, to answer your question in a new, better way.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="info-title team text-center">
-          <h2>WE'RE HERE FOR YOU</h2>
-          <hr class="separator">
-        </div>
-        <div class="info-text team text-center">
-          <p>The LightClock team provide <strong>support, mediation, editorship,</strong> and, finally, <strong>publication</strong> to thinkers, as well as <strong>client and account services.</strong> The language of the articles published on <span><a href="/">lightclock.org</a></span> is English.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="info-title team founded text-center" id="how">
-          <h2>The LightClock team</h2>
-          <hr class="separator">
-        </div>
-        <div class="info-text team text-center">
-          <p>LightClock was founded by writer-researcher <strong>Anna Gát</strong> in London.</p>
-          <p>Read Anna’s welcome blog post <span><a href="#">here.</a></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="academia-software">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6" id="about">
-        <i class="fa fa-graduation-cap icon-1" aria-hidden="true"></i>
-        <h3 class="info">ACADEMIA</h3>
-        <div class="sep-line-3"></div>
-        <p>LightClock’s research advisor, microeconomist and game theorist Peter Isztin took on a key role in refining our concept.</p>
-        <p>Anna, a social liberal writer, and the conservative-libertarian Peter found their passionate debates to be constructive and enlightening. They were surprised to reach some pretty cool agreements. And then some more.</p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6">
-        <i class="fa fa-cogs icon-1" aria-hidden="true"></i>
-        <h3 class="info">SOFTWARE</h3>
-        <div class="sep-line-3"></div>
-        <p>LightClock’s tech team come from various backgrounds, including quantum physics, Law as well as design, and actively contribute as thinkers themselves.</p>
-        <p>Cross-disciplinary discussions are, still and always, at the heart of life at LightClock, and we take pride in leading by example.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="board-advisors">
-    <div class="info-title team text-center">
-      <h2>BOARD OF ADVISORS</h2>
-      <div class="sep-line"></div>
-    </div>
-    <div class="board-list">
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <div class="text-center">
-            <ul>
-              <p><li><span><a href="https://www.linkedin.com/in/ibard" target="_blank">Imre Bárd</a></span> – ethics of human enhancement, science communication (London School of Economics, founder at <span><a href="http://www.hackthesenses.com/" target="_blank"><i>Hack the Senses</i></a></span>)</li></p>
-              <p><li>Andrea Eibel – business development, marketing</li></p>
-              <p><li><span><a href="https://www.linkedin.com/in/alex-feldman-a5253828">Alex Feldman</a></span> PhD – Alon Fellow (Department of English, Univeristy of Haifa)</li></p>
-              <p><li><span><a href="https://www.linkedin.com/in/mihaly-kollo-56386b39">Mihaly Kollo</a></span> PhD – systems neuroscience, sensory neurophysiology</li></p>
-              <p><li><span><a href="https://www.linkedin.com/in/julia-koltai-phd-5749a2b2">Julia Koltai</a></span> PhD – sociologist, survey statistician (Hungarian Academy of Sciences, Centre for Social Sciences and Eötvös Loránd University of Sciences)</li></p>
-              <p><li><span><a href="https://www.york.ac.uk/che/staff/research/noemi-kreif/">Noemi Kreif</a></span> PhD –  health economics (research fellow, University of York)</li></p>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="text-center">
-            <ul>
-              <p><li><span><a href="https://www.linkedin.com/in/eszter-matyeka-046942100">Eszter Matyeka</a></span> – data science, complex emergencies (International Red Cross, Middle East)</li></p>
-              <p><li><span><a href="https://www.linkedin.com/in/robertnemeth">Robert Nemeth</a></span> – publishing and foreign policy</li></p>
-              <p><li><span><a href="https://www.linkedin.com/in/peter-pelles-19381937">Peter Pelles</a></span> – business development, network strategy</li></p>
-              <p><li>Julianna Peti – clinical psychologist (founder at Hungarian Oncological Society – Oncopsychology and Rehabilitation)</li></p>
-              <p><li><span><a href="http://scholar.harvard.edu/dprinz/home">Daniel Prinz</a></span> – mathematical economics, health economics and policy (Harvard University)</li></p>
-              <p><li><span><a href="https://elte.academia.edu/AnnaR%C3%A9z">Anna Réz</a></span> PhD – moral philosopher, activist (founder at <span><a href="http://uvegplafon.blog.hu/"><i>Üvegplafon</i></a></span> , Central European University, Eötvös Lóránd University)</li></p>
-            </ul>
+          <div class="col-xs-12 col-md-6">
+            <div class="text-center">
+              <ul>
+                <p><li><span><a href="https://www.linkedin.com/in/eszter-matyeka-046942100">Eszter Matyeka</a></span> – data science, complex emergencies (International Red Cross, Middle East)</li></p>
+                <p><li><span><a href="https://www.linkedin.com/in/robertnemeth">Robert Nemeth</a></span> – publishing and foreign policy</li></p>
+                <p><li><span><a href="https://www.linkedin.com/in/peter-pelles-19381937">Peter Pelles</a></span> – business development, network strategy</li></p>
+                <p><li>Julianna Peti – clinical psychologist (founder at Hungarian Oncological Society – Oncopsychology and Rehabilitation)</li></p>
+                <p><li><span><a href="http://scholar.harvard.edu/dprinz/home">Daniel Prinz</a></span> – mathematical economics, health economics and policy (Harvard University)</li></p>
+                <p><li><span><a href="https://elte.academia.edu/AnnaR%C3%A9z">Anna Réz</a></span> PhD – moral philosopher, activist (founder at <span><a href="http://uvegplafon.blog.hu/"><i>Üvegplafon</i></a></span> , Central European University, Eötvös Lóránd University)</li></p>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

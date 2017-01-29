@@ -47,46 +47,18 @@ $(document).ready(function() {
   })
 });
 
-
-$(window).load(function(){
-   // PAGE IS FULLY LOADED
-   // FADE OUT YOUR OVERLAYING DIV
-   $('#overlay').fadeOut();
-});
-
-;(function(){
-  function id(v){ return document.getElementById(v); }
-  function loadbar() {
-    var ovrl = id("overlay"),
-        prog = id("progress"),
-        stat = id("progstat"),
-        img = document.images,
-        c = 0,
-        tot = img.length;
-    if(tot == 0) return doneLoading();
-
-    function imgLoaded(){
-      c += 1;
-      var perc = ((100/tot*c) << 0) +"%";
-      prog.style.width = perc;
-      stat.innerHTML = "Loading "+ perc;
-      if(c===tot) return doneLoading();
-    }
-    function doneLoading(){
-      ovrl.style.opacity = 0;
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
       setTimeout(function(){
-        ovrl.style.display = "none";
-      }, 1200);
-    }
-    for(var i=0; i<tot; i++) {
-      var tImg     = new Image();
-      tImg.onload  = imgLoaded;
-      tImg.onerror = imgLoaded;
-      tImg.src     = img[i].src;
-    }
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
   }
-  document.addEventListener('DOMContentLoaded', loadbar, false);
-}());
+}
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
