@@ -41,7 +41,7 @@
     color: white;
     &:hover {
       text-decoration: none;
-      color: blue;
+      color: #0088EA;
     }
   }
 }
@@ -97,6 +97,10 @@
   }
   ol {
     padding: 0;
+  }
+  a:hover {
+    color: #1e73be;
+    text-decoration: none;
   }
 }
 
