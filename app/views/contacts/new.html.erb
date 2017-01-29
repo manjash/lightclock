@@ -2,7 +2,7 @@
   <div class="banner-content-order">
     <h1 class="become">BECOME A <span style="color: #1CA9F3">LIGTHCLOCK</span> THINKER</h1>
     <div class="thinker-form text-center">
-      <%= simple_form_for @contact, :method => :post, :html => {:multipart => true } do |f| %>
+      <%= simple_form_for @contact, :html => {:multipart => true } do |f| %>
       <%= f.input :name, required: true, placeholder: "John Doe" %>
       <%= f.input :email, required: true, placeholder: "john@gmail.com" %>
       <%= f.input :field, label: "Field of expertise", required: true, placeholder: "Health economics" %>
