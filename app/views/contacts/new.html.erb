@@ -8,7 +8,7 @@
       <%= f.input :field, label: "Field of expertise", required: true, placeholder: "Health economics" %>
       <%= f.input :degree, label: "Highest academic degree", collection: ["High school or secondary school", "Some college", "Bachelor's degree or equivalent", "Master's degree or equivalent", "Ph.D", "Post-doc or equivalent"], required: true, placeholder: "Ph.D" %>
       <%= f.input :website, label: "Website:", error: 'Please add a valid website', placeholder: "www.mywebsite.com" %>
-      <%= f.input :attachment, as: :file, label: "Attach you CV" %>
+      <%= f.input :link, required: true, label: "Insert Google Docs link to your CV" %>
       <%# f.input :avatar, as: :file %>
       <div class= "hidden">
         <%= f.input :nickname, hint: 'Leave this field blank!' %>

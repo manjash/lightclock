@@ -7,7 +7,7 @@ class Contact < MailForm::Base
   attribute :degree,    :validate => true
   attribute :file,      :attachment => true
   attribute :nickname,  :captcha => true
-  attribute :file,      :attachment => true
+  attribute :link,      :validate => true
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
