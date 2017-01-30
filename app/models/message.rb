@@ -14,8 +14,8 @@ class Message < MailForm::Base
 
   def headers
     {
-      :subject => "THINKER REQUEST",
-      :to => "petiaaa182@gmail.com",
+      :subject => "RESEARCH REQUEST",
+      :to => "petya@lightclock.org",
       :from => %("#{name}" <#{email}>)
     }
   end
