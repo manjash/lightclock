@@ -1,0 +1,24 @@
+<div class="banner-order" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(<%= image_path ("banner-thinker.jpg") %>)">
+  <div class="banner-content-order">
+    <h1 class="become">BECOME A <span style="color: #1CA9F3">LIGTHCLOCK</span> THINKER</h1>
+    <div class="thinker-form text-center">
+      <%= simple_form_for @message, :html => {:multipart => true } do |f| %>
+      <%= f.input :name, required: true, placeholder: "John Doe" %>
+      <%= f.input :email, required: true, placeholder: "john@gmail.com" %>
+      <%= f.input :field, label: "Field of expertise", required: true, placeholder: "Health economics" %>
+      <%= f.input :degree, label: "Highest academic degree", collection: ["High school or secondary school", "Some college", "Bachelor's degree or equivalent", "Master's degree or equivalent", "Ph.D", "Post-doc or equivalent"], required: true, placeholder: "Ph.D" %>
+      <%= f.input :website, label: "Website:", error: 'Please add a valid website', placeholder: "www.mywebsite.com" %>
+      <%= f.input :attachment, as: :file, label: "Attach you CV" %>
+      <%# f.input :avatar, as: :file %>
+      <div class= "hidden">
+        <%= f.input :nickname, hint: 'Leave this field blank!' %>
+      </div>
+      <div>
+      </br>
+      <%= f.button :submit, 'Submit form', class: "btn btn-medium-left" %>
+    </div>
+    <% end %>
+  </div>
+</div>
+</div>
+<hr>
