@@ -8,7 +8,7 @@ class Message < MailForm::Base
   attribute :file,      :attachment => true
   attribute :nickname,  :captcha => true
   attribute :time
-  attribute :timezone
+  attribute :timezone,  :validate => true
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
