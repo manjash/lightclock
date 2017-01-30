@@ -257,6 +257,11 @@
     a {
       color: #777777;
     }
+    a:hover {
+      color: white;
+      background-color: #1E73BE;
+      transition-duration: 1s;
+    }
   }
 }
 .intro {
