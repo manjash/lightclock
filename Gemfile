@@ -16,8 +16,11 @@ gem 'simple_form'
 
 gem "paperclip", "~> 5.0.0"
 
-gem 'activeadmin', github: 'activeadmin/activeadmin'
+# Admin
+gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 
 gem 'sass-rails'
 gem 'jquery-rails'

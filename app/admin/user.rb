@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
 
-    index do
+  index do
     selectable_column
     column :id
     column :email
@@ -9,6 +9,19 @@ ActiveAdmin.register User do
     column :admin
     actions
   end
+
+  form do |f|
+    f.inputs "Identity" do
+      f.input :name
+      f.input :email
+    end
+    f.inputs "Admin" do
+      f.input :admin
+    end
+    f.actions
+  end
+
+  permit_params :name, :email, :admin
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
