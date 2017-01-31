@@ -16,6 +16,9 @@ gem 'simple_form'
 
 gem "paperclip", "~> 5.0.0"
 
+gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
