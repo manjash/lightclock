@@ -1,9 +1,17 @@
 /* Main class */
-.nav > li > a:hover {
+.navigation > li > a:hover {
   color: black;
   background-color: white;
   border: 1px solid white;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.navigation > li {
+ list-style: none;
+ a {
   border-radius: 34px;
+ }
 }
 
 .navbar-wagon {
@@ -465,9 +473,9 @@ body {
 
 html,body
 {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
