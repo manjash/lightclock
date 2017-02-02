@@ -5,7 +5,7 @@ class Message < MailForm::Base
   attribute :organisation
   attribute :phone,     :validate => true
   attribute :research_subject,    :validate => true
-  attribute :file,      :attachment => true
+  #attribute :file,      :attachment => true
   attribute :nickname,  :captcha => true
   attribute :time
   attribute :timezone,  :validate => true
