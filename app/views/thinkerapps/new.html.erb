@@ -11,10 +11,10 @@
       <%= f.input :website, label: "Website:", error: 'Please add a valid website', placeholder: "www.mywebsite.com" %>
       <%= f.input :upload_cv, label: "Please upload your CV (including two referee details)" %>
       <%= f.input :upload_cv_cache, as: :hidden %>
+      <%= f.button :submit, 'Submit form', class: "btn btn-medium-left" %>
     </div>
     <div>
     </br>
-    <%= f.button :submit, 'Submit form', class: "btn btn-medium-left" %>
   </div>
   <% end %>
 </div>
