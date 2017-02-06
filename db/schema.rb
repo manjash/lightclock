@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170206182725) do
+ActiveRecord::Schema.define(version: 20170206193136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -77,6 +77,19 @@ ActiveRecord::Schema.define(version: 20170206182725) do
   create_table "proposals", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "researchorders", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "organisation"
+    t.string   "phone"
+    t.string   "research_subject"
+    t.string   "time"
+    t.string   "timezone"
+    t.boolean  "accepts_data_treatment"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "thinker_profiles", force: :cascade do |t|
