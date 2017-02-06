@@ -16,6 +16,9 @@ gem 'simple_form'
 
 gem 'paperclip', '~> 4.2'
 
+gem 'carrierwave'
+gem 'cloudinary', '1.1.0'
+
 # Admin
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
