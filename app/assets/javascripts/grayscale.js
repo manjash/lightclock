@@ -47,29 +47,29 @@ $(document).ready(function() {
   })
 });
 
-// document.onreadystatechange = function () {
-//   var state = document.readyState
-//   if (state == 'interactive') {
-//        document.getElementById('contents').style.visibility="hidden";
-//   } else if (state == 'complete') {
-//       setTimeout(function(){
-//          document.getElementById('interactive');
-//          document.getElementById('load').style.visibility="hidden";
-//          document.getElementById('contents').style.visibility="visible";
-//       },1000);
-//   }
-// }
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
 
-// // jQuery for page scrolling feature - requires jQuery Easing plugin
-// $(function() {
-//   $('a.page-scroll').bind('click', function(event) {
-//     var $anchor = $(this);
-//     $('html, body').stop().animate({
-//       scrollTop: $($anchor.attr('href')).offset().top
-//     }, 1500, 'easeInOutExpo');
-//     event.preventDefault();
-//   });
-// });
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+  $('a.page-scroll').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
+});
 
 // Closes the Responsive Menu on Menu Item Click
 // $('.navbar-collapse ul li a').click(function() {
