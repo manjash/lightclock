@@ -4,11 +4,11 @@ Name: <%= @thinkerapp.first_name %> <%= @thinkerapp.last_name %>
 <br></br>
 Email: <%= @thinkerapp.email %>
 <br></br>
-Phone number: <%= @thinkerapp.field %>
+Field of study: <%= @thinkerapp.field %>
 <br></br>
-Where based: <%= @thinkerapp.degree %>
+Highest degree: <%= @thinkerapp.degree %>
 <br></br>
-Past experience: <%= @thinkerapp.website %>
+Website: <%= @thinkerapp.website %>
 <br></br>
 <% if @thinkerapp.upload_cv %>
   <%= link_to "See CV attached", cl_image_path(@thinkerapp.upload_cv) %>
