@@ -13,12 +13,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      open(URI::encode("http://light-clock-platform.herokuapp.com/thinker_profiles/add?name=
-        #{@contact.name}&email=#{@contact.email}
-        &expertise=#{@contact.field}
-        &degree=#{@contact.degree}
-        &website=#{@contact.website}
-        &cv_url=#{@contact.link}"))
+      open(URI::encode("http://light-clock-platform.herokuapp.com/thinker_profiles/add?name=#{@contact.name}&email=#{@contact.email}&expertise=#{@contact.field}&degree=#{@contact.degree}&website=#{@contact.website}&cv_url=#{@contact.link}"))
       flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
       redirect_to root_path, notice: "Your form was succesfully submitted!"
     else
