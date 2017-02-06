@@ -123,3 +123,31 @@
 .post-ending {
   margin-top: 40px;
 }
+
+.blog-pen {
+  background-color: #E6E6E6;
+  padding: 19px;
+  width: 57px;
+}
+
+.post-title-small > a {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 100;
+  font-family: Open Sans;
+  text-align: left !important;
+  &:hover {
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+.date-small {
+  font-style: italic;
+  font-size: 13px;
+  font-style: italic;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  margin-bottom: 30px;
+  color: #777777;
+  text-align: left;
+}
