@@ -21,20 +21,45 @@
     </div>
 
     <div class="col-md-9">
-      <div class="post text-center">
-        <h4 class="post-title">WE'RE LAUNCHING LIGHTCLOCK</h4>
-        <p class="date">17 Jan 2017</p>
-        <p class="post-peak">Welcome! You must be wondering what all the fuss is about, so I thought I'd dedicate the first blog post to explaining some of the basics of how our co-thinkng [...]</p>
-        <%= link_to "READ MORE", "/were-launching-lightclock", class: "btn btn-read-more" %>
-      </div>
-    </div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
 
-        <div class="col-md-9">
-      <div class="post text-center">
-        <h4 class="post-title">EINSTEIN'S LIGHT CLOCK</h4>
-        <p class="date">1 Jan 2017</p>
-        <p class="post-peak">A ‘light clock’ is a thought experiment proposed by Albert Einstein to explain time dilation, a key concept in his General Theory of Relativity. We respectfully [...]</p>
-        <%= link_to "READ MORE", "/einsteins-light-clock", class: "btn btn-read-more" %>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="post text-center">
+              <h4 class="post-title">WE'RE LAUNCHING LIGHTCLOCK</h4>
+              <p class="date">17 Jan 2017</p>
+              <p class="post-peak">Welcome! You must be wondering what all the fuss is about, so I thought I'd dedicate the first blog post to explaining some of the basics of how our co-thinkng [...]</p>
+              <%= link_to "READ MORE", "/were-launching-lightclock", class: "btn btn-read-more" %>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="post text-center">
+              <h4 class="post-title">EINSTEIN'S LIGHT CLOCK</h4>
+              <p class="date">1 Jan 2017</p>
+              <p class="post-peak">A ‘light clock’ is a thought experiment proposed by Albert Einstein to explain time dilation, a key concept in his General Theory of Relativity. We respectfully [...]</p>
+              <%= link_to "READ MORE", "/einsteins-light-clock", class: "btn btn-read-more" %>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
   </div>
