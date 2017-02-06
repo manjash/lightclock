@@ -1,0 +1,23 @@
+<div class="banner-order" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(<%= image_path ("banner-thinker.jpg") %>)">
+  <div class="banner-content-order">
+    <h1 class="become">BECOME A <span style="color: #1CA9F3">LIGTHCLOCK</span> THINKER</h1>
+    <div class="thinker-form text-center">
+      <%= simple_form_for [@thinkerapp], :html => {:class => 'app_form_font' } do |f| %>
+      <%= f.input :first_name, required: true, placeholder: "John" %>
+      <%= f.input :last_name, required: true, placeholder: "Doe" %>
+      <%= f.input :email, required: true, placeholder: "john@gmail.com" %>
+      <%= f.input :field, label: "Field of expertise", required: true, placeholder: "Health economics" %>
+      <%= f.input :degree, label: "Highest academic degree", collection: ["High school or secondary school", "Some college", "Bachelor's degree or equivalent", "Master's degree or equivalent", "Ph.D", "Post-doc or equivalent"], required: true, placeholder: "Ph.D" %>
+      <%= f.input :website, label: "Website:", error: 'Please add a valid website', placeholder: "www.mywebsite.com" %>
+      <%= f.input :upload_cv, label: "Please upload your CV (including two referee details)" %>
+      <%= f.input :upload_cv_cache, as: :hidden %>
+    </div>
+    <div>
+    </br>
+    <%= f.button :submit, 'Submit form', class: "btn btn-medium-left" %>
+  </div>
+  <% end %>
+</div>
+</div>
+</div>
+<hr>
