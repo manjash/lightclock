@@ -2,7 +2,6 @@
 .navigation > li > a:hover {
   color: #777777;
   background-color: white;
-  border: 1px solid white;
   text-decoration: none;
   transition: 0.8s;
 }
@@ -15,14 +14,14 @@
 
 .navigation > li {
  list-style: none;
+ text-transform: uppercase;
+ font-weight: 400;
+ font-size: 14px;
+ font-family: Montserrat;
  a {
   border-radius: 34px;
   padding: 5px;
 }
-}
-
-.list-inline > li {
-  padding-right: 15px;
 }
 
 .navbar-right > ul {
@@ -283,6 +282,7 @@
     li > a:hover {
       color: white;
       background-color: #1E73BE;
+      border: none;
     }
   }
 }
