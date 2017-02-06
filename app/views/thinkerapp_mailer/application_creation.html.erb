@@ -1,0 +1,19 @@
+You have received an application from <%= @thinkerapp.first_name %>  <%= @thinkerapp.last_name %>:
+<br></br>
+Name: <%= @thinkerapp.first_name %> <%= @thinkerapp.last_name %>
+<br></br>
+Email: <%= @thinkerapp.email %>
+<br></br>
+Phone number: <%= @thinkerapp.field %>
+<br></br>
+Where based: <%= @thinkerapp.degree %>
+<br></br>
+Past experience: <%= @thinkerapp.website %>
+<br></br>
+<% if @thinkerapp.upload_cv %>
+  <%= link_to "See CV attached", cl_image_path(@thinkerapp.upload_cv) %>
+<% else %>
+  No CV provided
+<% end %>
+<br></br>
+<%= link_to "Reply to #{@thinkerapp.first_name}?", "mailto:#{@thinkerapp.email}" %>
