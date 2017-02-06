@@ -1,4 +1,3 @@
-<div class="navbar-wagon">
   <!-- Navigation -->
   <nav class="navbar navbar-custom navbar-fixed-top hidden-xs hidden-sm" role="navigation">
     <div class="container">
@@ -11,10 +10,9 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="navbar-right">
-        <ul class="navigation navbar-nav hidden-xs hidden-sm">
-
+        <ul class="navigation list-inline hidden-xs hidden-sm">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
+          <li>
             <a href="#page-top"></a>
           </li>
           <li>
@@ -28,6 +26,7 @@
           </li>
         </ul>
       </div>
+
     </div>
   </nav>
 
@@ -51,7 +50,7 @@
     </ul> -->
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--     <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -68,35 +67,35 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Different navigation if login or not -->
     <% if user_signed_in? %>
     <nav class="navbar navbar-custom navbar-fixed-top hidden-xs hidden-sm" role="navigation">
-<div class="container">
-      <div class="navbar-right">
-        <ul class="nav navbar-nav hidden-xs hidden-sm">
+      <div class="container">
+        <div class="navbar-right">
+          <ul class="nav navbar-nav hidden-xs hidden-sm">
 
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-          <li>
-            <a class="navbar-info" href="/">Home</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="/domains_of_discourse">Domains of Discourse</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="/get_in_touch">Get in touch</a>
-          </li>
-          <li>
-            <%= link_to destroy_user_session_path, method: :delete do %>
-            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out", class: "navbar-right") %>
-            <% end %>
-          </li>
-        </ul>
-      </div>
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="navbar-info" href="/">Home</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="/domains_of_discourse">Domains of Discourse</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="/get_in_touch">Get in touch</a>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+              <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out", class: "navbar-right") %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -139,9 +138,6 @@
 
     <% end %>
 
-    <!-- Button (call-to-action) -->
-    <%# link_to t(".top_call_to_action", default: "Post stuff"), "#", class: "navbar-wagon-item navbar-wagon-button btn" %>
-  </div>
 
 
 
