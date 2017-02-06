@@ -2,8 +2,6 @@
 <html>
 <head>
   <title><%= content_for(:title) ? yield(:title) + "| LightClock" : "LightClock" %></title>
-  <script src="/pace/pace.js"></script>
-  <link href="/pace/themes/pace-theme-barber-shop.css" rel="stylesheet" />
   <%= csrf_meta_tags %>
   <%= action_cable_meta_tag %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
