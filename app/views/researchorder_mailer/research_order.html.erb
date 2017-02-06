@@ -1,0 +1,17 @@
+You have received an application from <%= @researchorder.first_name %>  <%= @researchorder.last_name %>:
+<br></br>
+Name: <%= @researchorder.first_name %> <%= @researchorder.last_name %>
+<br></br>
+Email: <%= @researchorder.email %>
+<br></br>
+Organisation: <%= @researchorder.organisation %>
+<br></br>
+Phone number: <%= @researchorder.phone %>
+<br></br>
+Research subject: <%= @researchorder.research_subject %>
+<br></br>
+Best time to call: <%= @researchorder.time %>
+<br></br>
+Timezone: <%= @researchorder.timezone %>
+<br></br>
+<%= link_to "Reply to #{@researchorder.first_name}?", "mailto:#{@researchorder.email}" %>
