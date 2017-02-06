@@ -1,0 +1,2 @@
+class Researchorder < ApplicationRecord
+end
