@@ -47,18 +47,18 @@ $(document).ready(function() {
   })
 });
 
-document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'interactive') {
-       document.getElementById('contents').style.visibility="hidden";
-  } else if (state == 'complete') {
-      setTimeout(function(){
-         document.getElementById('interactive');
-         document.getElementById('load').style.visibility="hidden";
-         document.getElementById('contents').style.visibility="visible";
-      },1000);
-  }
-}
+// document.onreadystatechange = function () {
+//   var state = document.readyState
+//   if (state == 'interactive') {
+//        document.getElementById('contents').style.visibility="hidden";
+//   } else if (state == 'complete') {
+//       setTimeout(function(){
+//          document.getElementById('interactive');
+//          document.getElementById('load').style.visibility="visible";
+//          document.getElementById('contents').style.visibility="visible";
+//       },1000);
+//   }
+// }
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
