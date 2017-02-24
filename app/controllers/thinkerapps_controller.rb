@@ -6,7 +6,7 @@ class ThinkerappsController < ApplicationController
   end
 
   def create
-    @thinkerapp = Thinkerapp.create(thinkerapp_params)
+    @thinkerapp = Thinkerapp.new(thinkerapp_params)
     if @thinkerapp.save
       ThinkerappMailer.application_creation(@thinkerapp).deliver_now
       redirect_to root_path, notice: "Your application was succesfully submitted!"
