@@ -18,6 +18,6 @@ class ResearchordersController < ApplicationController
   private
 
   def researchorder_params
-    params.require(:researchorder).permit(:first_name, :last_name, :organisation, :phone, :research_subject, :time, :timezone, :accepts_data_treatment)
+    params.require(:researchorder).permit(:first_name, :last_name, :organisation, :email, :phone, :research_subject, :time, :timezone, :accepts_data_treatment)
   end
 end
